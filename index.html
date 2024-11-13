@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PumiPan - Panadería y Repostería</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff8c00;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('ruta-de-tu-imagen.jpg'); /* Cambia a la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .producto {
+            background-color: #ffebcd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff8c00;
+            color: white;
+        }
+
+        /* Media Queries para Responsividad */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .producto {
+                width: 90%; /* Ocupa el 90% del ancho en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1em;
+            }
+            nav a {
+                display: block; /* Muestra los enlaces en bloque para mejor accesibilidad */
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PumiPan</h1>
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>¡Bienvenidos a PumiPan!</h2>
+    <p>Delicias recién horneadas para ti.</p>
+</section>
+
+<section id="nosotros">
+    <h2>Nuestra Historia</h2>
+    <p>En PumiPan, nos dedicamos a ofrecer productos de alta calidad con ingredientes frescos y tradicionales. Con pasión y dedicación, llevamos sabores auténticos a cada hogar.</p>
+</section>
+
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+        <div class="producto">
+            <h3>Pan Artesanal</h3>
+            <p>Delicioso pan hecho a mano.</p>
+        </div>
+        <div class="producto">
+            <h3>Pasteles</h3>
+            <p>Pasteles frescos para cualquier ocasión.</p>
+        </div>
+    </section>
+
+<section id="servicios">
+        <h2>Servicios</h2>
+        <p>Ofrecemos un servicio cercano y personalizado, enfocado en la satisfacción de nuestros clientes. También realizamos pedidos especiales para eventos y celebraciones.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Dirección: Calle Ejemplo, Norte de Santander</p>
+        <p>Teléfono: (123) 456-7890</p>
+    </section>
+    
+    <footer>
+        <p>© 2023 Pum Pan. Todos los derechos reservados.</p>
+        <p><a href="#" style="color: white;">Términos y condiciones</a> | <a href="#" style="color: white;">Política de privacidad</a></p>
+    </footer>
+    
+    </body>
+    </html>
